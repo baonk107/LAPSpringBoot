@@ -11,6 +11,8 @@ public interface DerivativeService {
 
     public List<Paging> getAllPaging();
 
-    public List<Paging> searchByCode(List<String> code);
+    public List<Paging> filterByPageOrSort(String strPage, String sort, String size);
+
+    public List<Paging> filterByCodeOrPagingOrSort(List<String> codes, String page, String sort, String size);
 
 }

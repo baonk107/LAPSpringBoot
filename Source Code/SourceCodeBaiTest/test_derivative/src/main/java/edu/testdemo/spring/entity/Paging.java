@@ -12,6 +12,6 @@ public class Paging {
     private List<DerivativeDTO> data;
     private int currentPage;
     private int size;
-    private int totalPages;
     private int totalElements;
+    private int totalPages;
 }

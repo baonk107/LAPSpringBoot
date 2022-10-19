@@ -21,26 +21,29 @@ public class DerivativeController {
 
     @RequestMapping(value = "/derivativeAll")
     public List<DerivativeDTO> getListDeri() {
-
         return derivativeService.getAllDeri();
     }
 
     @RequestMapping(value = "/derivative")
-    public List<Paging> getListpaging(@RequestParam(name = "q") String ids,
-                                      @RequestParam(name = "page") int page) {
-        ids=ids.trim();
-        System.out.println("String ID: " + ids);
-        System.out.println("Paging: " + page);
+    public List<Paging> getListpaging(@RequestParam(name = "code", required = false) List<String> codes,
+                                      @RequestParam(name = "page", required = false) String page,
+                                      @RequestParam(name = "sort", required = false) String sort,
+                                      @RequestParam(name = "size", required = false) String size) {
 
-        String strFinal = ids.substring(5).trim();
-        System.out.println("SubStr: "+strFinal);
-
-        String[] words = strFinal.split("\\,");
-        List<String> code = new ArrayList<>();
-        for (String w : words) {
-            code.add(w);
+        //Xử Lý page là chữ, < 0, size là chữ, size < 0 sau :v
+        if (page == null || page.isEmpty()) {
+            page = "1"; //Default = 1
+        }
+        if (sort == null || sort.isEmpty()) {
+            sort = "desc"; //Default desc
+        }
+        if (size == null || size.isEmpty()) {
+            size = "20"; //Default size = 2
+        }
+        if (codes == null || codes.isEmpty()) {
+            return derivativeService.filterByPageOrSort(page, sort, size);
         }
 
-        return derivativeService.searchByCode(code);
+        return derivativeService.filterByCodeOrPagingOrSort(codes, page, sort, size);
     }
 }
