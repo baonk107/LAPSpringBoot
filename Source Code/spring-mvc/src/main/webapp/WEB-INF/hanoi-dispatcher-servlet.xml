@@ -1,0 +1,88 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context-4.2.xsd
+                        http://www.springframework.org/schema/mvc
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
+    <context:annotation-config/>
+    <context:component-scan base-package="edu.java.spring.controller"/>
+    <context:component-scan base-package="edu.java.spring.dao.impl"/>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="order" value="2"/>
+        <property name="prefix" value="/student/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--    Add configuration xsltViewResolver-->
+<!--    <bean id="xsltViewResolver"-->
+<!--          class="org.springframework.web.servlet.view.xslt.XsltViewResolver">-->
+<!--        <property name="order" value="1"/>-->
+<!--        <property name="viewClass" value="org.springframework.web.servlet.view.xslt.XsltView"/>-->
+<!--        <property name="sourceKey" value="data"/>-->
+<!--        <property name="prefix" value="/xsl/"/>-->
+<!--        <property name="suffix" value=".xsl"/>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;    Add configuration XmlViewResolver&ndash;&gt;-->
+<!--    <bean id="viewResolver"-->
+<!--          class="org.springframework.web.servlet.view.XmlViewResolver">-->
+<!--        <property name="order" value="1"/>-->
+<!--        <property name="location" value="/WEB-INF/views.xml"/>-->
+<!--    </bean>-->
+
+    <!--    Add configuration viewResolver-->
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+        <property name="order" value="1"/>
+        <property name="basename" value="views"/>
+    </bean>
+
+    <!--    Add Configuration resources-->
+    <mvc:annotation-driven/>
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+
+    <!--    Add Configuration Validate Data Message-->
+    <bean class="org.springframework.context.support.ResourceBundleMessageSource" id="messageSource">
+        <property name="basename" value="messages"/>
+    </bean>
+
+    <!--    Configuration DataSources-->
+    <bean id="dataSources" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+        <property name="url" value="jdbc:derby:C:/JavaSpring/sampledb2;create=true"/>
+        <property name="username" value=""/>
+        <property name="password" value=""/>
+    </bean>
+
+    <!--    Configuration Tiles-->
+    <bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="order" value="1"/>
+        <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
+    </bean>
+
+    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <property name="definitions">
+            <list>
+                <value>/tiles/definitions.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--    Add Configuration to Commons-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="100"/>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.Exception">../student.error</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

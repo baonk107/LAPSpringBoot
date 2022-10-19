@@ -1,0 +1,58 @@
+[2022-10-07 14:12:29] INFO [main] ContextStartEventHandler.onApplicationEvent(17) | Context Start Application org.springframework.jdbc.datasource.DriverManagerDataSource@7a65a360
+[2022-10-07 14:13:49] INFO [main] ContextStartEventHandler.onApplicationEvent(17) | Context Start Application org.springframework.jdbc.datasource.DriverManagerDataSource@61608e1a
+[2022-10-07 14:15:26] INFO [main] ContextStartEventHandler.onApplicationEvent(17) | Context Start Application org.springframework.jdbc.datasource.DriverManagerDataSource@61608e1a
+[2022-10-07 14:15:49] INFO [main] ContextStartEventHandler.onApplicationEvent(17) | Context Start Application org.springframework.jdbc.datasource.DriverManagerDataSource@4b88ca8e
+[2022-10-07 14:15:59] INFO [main] ContextStartEventHandler.onApplicationEvent(17) | Context Start Application org.springframework.jdbc.datasource.DriverManagerDataSource@1f10fec6
+[2022-10-07 14:17:06] INFO [main] ContextStartEventHandler.onApplicationEvent(17) | Context Start Application org.springframework.jdbc.datasource.DriverManagerDataSource@1f10fec6
+[2022-10-07 14:32:27] INFO [main] ContextStartEventHandler.createTable(33) | Table HN_GROUP already exits!
+[2022-10-07 14:40:30] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@382dc417
+[2022-10-07 14:40:30] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 15:19:29] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@1f10fec6
+[2022-10-07 15:19:29] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 15:19:56] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@1f10fec6
+[2022-10-07 15:19:56] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 15:20:43] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@33a8c9c9
+[2022-10-07 15:20:43] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 15:22:11] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@33a8c9c9
+[2022-10-07 15:22:11] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 15:24:25] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@7197b07f
+[2022-10-07 15:24:25] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 15:25:54] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@382dc417
+[2022-10-07 15:25:54] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 15:26:22] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@7197b07f
+[2022-10-07 15:26:22] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 15:30:31] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@7197b07f
+[2022-10-07 15:30:32] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 15:30:46] INFO [http-nio-8080-exec-2] GroupController.addNew(31) | Add new group ------> Group{name='Khac Bao', id=0}
+[2022-10-07 15:32:18] INFO [http-nio-8080-exec-5] GroupController.addNew(31) | Add new group ------> Group{name='An Hao', id=0}
+[2022-10-07 15:36:00] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@7197b07f
+[2022-10-07 15:36:00] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 15:36:24] INFO [http-nio-8080-exec-6] GroupController.addNew(31) | Add new group ------> Group{name='Nguyen Khac Bao', id=0}
+[2022-10-07 16:04:23] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3b41e1bf
+[2022-10-07 16:04:24] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 16:04:42] INFO [http-nio-8080-exec-2] GroupController.addNew(36) | Add new group ------> Group{name='Nguyen Khac Bao', id=0}
+[2022-10-07 16:04:42] INFO [http-nio-8080-exec-3] GroupController.addNew(36) | Add new group ------> Group{name='Nguyen Khac Bao', id=0}
+[2022-10-07 16:05:47] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@5d124d29
+[2022-10-07 16:05:47] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 16:06:55] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@423ed3b5
+[2022-10-07 16:07:06] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@37af24cb
+[2022-10-07 16:07:06] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 16:07:13] INFO [http-nio-8080-exec-2] GroupController.addNew(36) | Add new group ------> Group{name='Nguyen Khac Bao', id=0}
+[2022-10-07 16:27:55] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@4e4162bc
+[2022-10-07 16:27:55] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 16:30:16] INFO [http-nio-8080-exec-2] GroupController.addNew(36) | Add new group ------> Group{name='Nguyen Khac Bao', id=0}
+[2022-10-07 16:30:16] INFO [http-nio-8080-exec-4] GroupController.addNew(36) | Add new group ------> Group{name='Nguyen Khac Bao', id=0}
+[2022-10-07 16:31:14] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@2d28fb02
+[2022-10-07 16:31:14] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 16:31:24] INFO [http-nio-8080-exec-2] GroupController.addNew(36) | Add new group ------> Group{name='Nguyen Khac Bao', id=0}
+[2022-10-07 16:32:49] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@4e4162bc
+[2022-10-07 16:32:49] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 16:32:57] INFO [http-nio-8080-exec-2] GroupController.addNew(36) | Add new group ------> Group{name='Khac Bao', id=0}
+[2022-10-07 16:34:38] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@6db328f8
+[2022-10-07 16:34:38] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 16:34:45] INFO [http-nio-8080-exec-1] GroupController.addNew(36) | Add new group ------> Group{name='Khac Bao', id=0}
+[2022-10-07 16:34:45] INFO [http-nio-8080-exec-1] GroupDAOImpl.insert(27) | Save group Khac Bao done!
+[2022-10-07 16:36:48] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@2d28fb02
+[2022-10-07 16:36:48] INFO [main] ContextStartEventHandler.createTable(34) | Table HN_GROUP already exits!
+[2022-10-07 16:36:54] INFO [http-nio-8080-exec-2] GroupController.addNew(36) | Add new group ------> Group{name='Nguyen Khac Bao', id=0}
+[2022-10-07 16:36:55] INFO [http-nio-8080-exec-2] GroupDAOImpl.insert(27) | Save group Nguyen Khac Bao done!

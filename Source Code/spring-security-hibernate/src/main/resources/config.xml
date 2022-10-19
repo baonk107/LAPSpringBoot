@@ -1,0 +1,158 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context-4.2.xsd
+						http://www.springframework.org/schema/mvc
+ 						http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+                        http://www.springframework.org/schema/security
+                        http://www.springframework.org/schema/security/spring-security-5.7.xsd
+                        http://www.springframework.org/schema/jdbc
+                        http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd">
+
+    <mvc:annotation-driven/>
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+
+    <bean
+            class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="order" value="1"/>
+        <property name="prefix" value="/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--	Add Bean TilesViewResolver-->
+    <bean id="tilesViewResolver"
+          class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="order" value="3"/>
+        <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
+    </bean>
+    <!--Add Bean Tiles Configurer-->
+    <bean id="tilesConfigurer"
+          class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <property name="definitions">
+            <list>
+                <value>/tiles/definitions.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--    Config Security-->
+    <security:http auto-config="true">
+        <security:intercept-url pattern="/auth/**" access="permitAll()"/>
+        <security:intercept-url pattern="/dang-nhap" access="permitAll()"/>
+
+        <security:intercept-url pattern="/nguoi-dung/**" access="hasRole('ROLE_USER')"/>
+
+        <security:form-login login-page="/dang-nhap"
+                             username-parameter="username"
+                             password-parameter="password"
+                             login-processing-url="/j_spring_security_check"
+                             default-target-url="/nguoi-dung"
+                             authentication-failure-url="/dang-nhap?error=1"/>
+
+        <security:logout logout-url="/j_spring_security_logout" logout-success-url="/"/>
+
+        <!--        Add Security Custome-->
+        <security:custom-filter ref="socialAuthenticationFilter" before="PRE_AUTH_FILTER"/>
+    </security:http>
+
+    <!--    Add Bean Social AuthenticationFilter-->
+    <bean id="socialAuthenticationFilter"
+          class="org.springframework.social.security.SocialAuthenticationFilter">
+        <constructor-arg name="authManager" ref="authenticationManager"/>
+        <constructor-arg name="userIdSource" ref="userIdSource"/>
+        <constructor-arg name="usersConnectionRepository" ref="inMemoryUsersConnectionRepository"/>
+        <constructor-arg name="authServiceLocator" ref="connectionFactoryLocator"/>
+    </bean>
+
+    <!--    Security Manager userAuth and socialAuth-->
+    <security:authentication-manager alias="authenticationManager">
+        <security:authentication-provider ref="userAuthProvider"/>
+        <security:authentication-provider ref="socialAuthenticationProvider"/>
+
+        <security:authentication-provider>
+            <security:user-service>
+                <security:user name="test" password="{noop}123" authorities="ROLE_USER"/>
+            </security:user-service>
+        </security:authentication-provider>
+
+        <!--        Auth Security UserDetailsService-->
+        <security:authentication-provider user-service-ref="jazzUserDetailsService"/>
+
+    </security:authentication-manager>
+
+    <!--    Add Bean Social Auth Provider and inMemoryUsers Connection Repository-->
+    <bean id="socialAuthenticationProvider"
+          class="org.springframework.social.security.SocialAuthenticationProvider">
+        <constructor-arg ref="inMemoryUsersConnectionRepository"/>
+        <constructor-arg ref="socialUserDetailService"/>
+    </bean>
+    <bean id="inMemoryUsersConnectionRepository"
+          class="org.springframework.social.connect.mem.InMemoryUsersConnectionRepository">
+        <constructor-arg name="connectionFactoryLocator" ref="connectionFactoryLocator"/>
+        <property name="connectionSignUp" ref="connectionSignUp"/>
+    </bean>
+
+    <!--    Link to Bean Connection Factory Locator and facebook Auth service-->
+    <bean id="connectionFactoryLocator"
+          class="edu.hanoi.jazz.service.JazzSocialAuthServiceRegistry">
+        <constructor-arg>
+            <list>
+                <ref bean="facebookAuthenticationService"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="facebookAuthenticationService"
+          class="org.springframework.social.facebook.security.FacebookAuthenticationService">
+        <constructor-arg name="apiKey" value="489846129849409"/>
+        <constructor-arg name="appSecret" value="9795b0039141ba82a026e338917988f1"/>
+    </bean>
+
+    <!--    Add Bean Link Connection SignUp-->
+    <bean id="connectionSignUp"
+          class="edu.hanoi.jazz.service.JazzConnectionSignUp"/>
+
+    <!--    Add Bean Link userIdSource-->
+    <bean id="userIdSource" class="org.springframework.social.security.AuthenticationNameUserIdSource"/>
+    <bean id="textEncryptor" class="org.springframework.security.crypto.encrypt.Encryptors" factory-method="noOpText" />
+
+    <security:global-method-security pre-post-annotations="enabled"/>
+
+    <!--    === Data Source Configuration===-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+        <property name="url" value="jdbc:derby:C:/JavaSpring/db/userdb1;create=true"/>
+        <property name="username" value=""/>
+        <property name="password" value=""/>
+    </bean>
+
+    <!--    Add bean listenner-->
+    <bean id="startEventHandler" class="edu.hanoi.jazz.ContextStartEventHandler"/>
+
+    <!--    Add Bean sessionFactory-->
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.DerbyDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+
+        <property name="packagesToScan" value="edu.hanoi.jazz.dao.model"/>
+
+        <!--        Mapping User-->
+        <property name="mappingLocations">
+            <list>
+                <value>classpath:User.xml</value>
+            </list>
+        </property>
+    </bean>
+</beans>

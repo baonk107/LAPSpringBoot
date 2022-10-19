@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/sockjs-0.3.4.min.js"></script>
+    <script src="./js/stomp.js"></script>
+    <script src="./js/mainUser.js"></script>
+</head>
+
+<body onload="connect()">
+    <h1>List All User</h1>
+
+    <p><a href="user.html">Add User</a></p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>GroupId</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyUser">
+
+        </tbody>
+
+    </table>
+
+    <p id="response"></p>
+</body>
+
+</html>

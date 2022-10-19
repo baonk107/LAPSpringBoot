@@ -1,0 +1,2 @@
+[2022-10-17 23:43:16] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@5f9f3e58
+[2022-10-17 23:43:17] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!

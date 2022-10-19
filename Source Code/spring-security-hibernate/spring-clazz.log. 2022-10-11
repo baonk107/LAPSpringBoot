@@ -1,0 +1,119 @@
+[2022-10-11 08:52:11] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3dbd7107
+[2022-10-11 08:52:11] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 08:52:55] INFO [http-nio-8080-exec-6] GroupDAOImpl.update(88) | Update group Khac Bao12345 successful!
+[2022-10-11 08:52:55] INFO [http-nio-8080-exec-6] GroupController.addNew(37) | Update new group ------> Khac Bao12345
+[2022-10-11 08:52:56] INFO [http-nio-8080-exec-1] GroupDAOImpl.delete(73) | Delete group Khac Bao12345 successful!
+[2022-10-11 09:08:06] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@790d8fdd
+[2022-10-11 09:08:06] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:09:21] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@790d8fdd
+[2022-10-11 09:09:21] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:16:59] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 09:16:59] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:20:35] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 09:20:35] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:21:01] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@7c1503a3
+[2022-10-11 09:21:01] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:21:33] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@586495f1
+[2022-10-11 09:21:33] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:21:55] INFO [http-nio-8080-exec-3] UserDAOImpl.insert(36) | Save group user2 done!
+[2022-10-11 09:21:55] INFO [http-nio-8080-exec-3] UserController.addNew(53) | Add New User ===> User{username='user2', password='123456', email='khacbao.1007@gmail.com', age=24, groupId=1}
+[2022-10-11 09:22:09] INFO [http-nio-8080-exec-5] UserDAOImpl.insert(36) | Save group user3 done!
+[2022-10-11 09:22:09] INFO [http-nio-8080-exec-5] UserController.addNew(53) | Add New User ===> User{username='user3', password='12345678', email='baonk107working@gmail.com', age=20, groupId=1}
+[2022-10-11 09:23:12] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 09:23:12] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:35:02] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 09:35:02] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:35:37] INFO [http-nio-8080-exec-3] UserDAOImpl.insert(36) | Save group admin done!
+[2022-10-11 09:35:37] INFO [http-nio-8080-exec-3] UserController.addNew(53) | Add New User ===> User{username='admin', password='12345678', email='baonkhe151451@fpt.edu.vn', age=25, groupId=1}
+[2022-10-11 09:36:09] INFO [http-nio-8080-exec-9] UserDAOImpl.insert(36) | Save group user0 done!
+[2022-10-11 09:36:09] INFO [http-nio-8080-exec-9] UserController.addNew(53) | Add New User ===> User{username='user0', password='123', email='baonkhe151451@fpt.edu.vn', age=12, groupId=1}
+[2022-10-11 09:38:45] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 09:38:45] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:49:56] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 09:49:56] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:52:12] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 09:52:12] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:56:29] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@6070775e
+[2022-10-11 09:56:29] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:59:18] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 09:59:18] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 09:59:56] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@7c1503a3
+[2022-10-11 09:59:56] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:01:53] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@7c1503a3
+[2022-10-11 10:01:53] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:01:56] INFO [http-nio-8080-exec-1] UserDAOImpl.deleteUser(91) | Rows affected: 1
+
+
+[2022-10-11 10:02:11] INFO [http-nio-8080-exec-3] UserDAOImpl.deleteUser(91) | Rows affected: 1
+
+
+[2022-10-11 10:14:02] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@2e56b4d
+[2022-10-11 10:14:02] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:14:19] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 10:14:19] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:14:40] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3f857e08
+[2022-10-11 10:14:40] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:21:55] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 10:21:55] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:23:31] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 10:23:31] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:24:18] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 10:24:18] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:28:37] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@2e56b4d
+[2022-10-11 10:28:37] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:32:44] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 10:32:44] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:33:19] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 10:33:20] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:33:41] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 10:33:41] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:37:51] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@7c1503a3
+[2022-10-11 10:37:51] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:46:23] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@7c1503a3
+[2022-10-11 10:46:23] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:46:45] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@113f9078
+[2022-10-11 10:46:45] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 10:58:04] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@6070775e
+[2022-10-11 10:58:04] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 11:16:20] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@4ef4f627
+[2022-10-11 11:16:20] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:21:33] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3d2f3dcb
+[2022-10-11 13:21:33] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:23:15] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@79a201cf
+[2022-10-11 13:23:15] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:24:47] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3d2f3dcb
+[2022-10-11 13:24:47] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:33:50] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3d2f3dcb
+[2022-10-11 13:33:50] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:35:48] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3d2f3dcb
+[2022-10-11 13:35:48] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:35:57] INFO [http-nio-8080-exec-1] UserAuthProvider.authenticate(30) | ========> Found User{username='user1', password='123456', email='baonkhe151451@fpt.edu.vn', age=21, groupId=1} by user1
+[2022-10-11 13:37:44] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3d2f3dcb
+[2022-10-11 13:37:44] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:38:23] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@79a201cf
+[2022-10-11 13:38:23] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:39:00] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@79a201cf
+[2022-10-11 13:39:00] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:39:11] INFO [http-nio-8080-exec-2] UserAuthProvider.authenticate(30) | ========> Found User{username='user1', password='123456', email='baonkhe151451@fpt.edu.vn', age=21, groupId=1} by user1
+[2022-10-11 13:39:27] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3d2f3dcb
+[2022-10-11 13:39:27] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:41:37] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3d2f3dcb
+[2022-10-11 13:41:37] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:45:17] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@79a201cf
+[2022-10-11 13:45:17] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:48:03] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3d2f3dcb
+[2022-10-11 13:48:03] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 13:48:18] INFO [http-nio-8080-exec-3] UserAuthProvider.authenticate(30) | ========> Found User{username='user1', password='123456', email='baonkhe151451@fpt.edu.vn', age=21, groupId=1} by user1
+[2022-10-11 15:53:23] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@54af3cb9
+[2022-10-11 15:53:23] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 15:54:07] INFO [http-nio-8080-exec-4] UserAuthProvider.authenticate(30) | ========> Found User{username='user1', password='123456', email='baonkhe151451@fpt.edu.vn', age=21, groupId=1} by user1
+[2022-10-11 15:54:07] INFO [http-nio-8080-exec-3] UserAuthProvider.authenticate(30) | ========> Found User{username='user1', password='123456', email='baonkhe151451@fpt.edu.vn', age=21, groupId=1} by user1
+[2022-10-11 15:54:55] INFO [http-nio-8080-exec-2] UserAuthProvider.authenticate(30) | ========> Found User{username='user1', password='123456', email='baonkhe151451@fpt.edu.vn', age=21, groupId=1} by user1
+[2022-10-11 16:07:31] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@54af3cb9
+[2022-10-11 16:07:31] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 16:12:00] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@4c07d1fc
+[2022-10-11 16:12:00] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 16:12:43] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@54af3cb9
+[2022-10-11 16:12:43] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-11 16:13:11] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@54af3cb9
+[2022-10-11 16:13:11] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!

@@ -1,0 +1,18 @@
+[2022-10-14 15:33:05] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@5f9f3e58
+[2022-10-14 15:33:05] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-14 15:33:11] INFO [http-nio-8080-exec-1] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 15:34:17] INFO [http-nio-8080-exec-2] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 15:34:19] INFO [http-nio-8080-exec-4] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 15:34:20] INFO [http-nio-8080-exec-6] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 15:34:20] INFO [http-nio-8080-exec-8] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 15:34:20] INFO [http-nio-8080-exec-10] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 15:34:25] INFO [http-nio-8080-exec-3] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 15:34:30] INFO [http-nio-8080-exec-7] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 15:35:25] INFO [http-nio-8080-exec-2] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 15:35:51] INFO [http-nio-8080-exec-5] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 15:36:29] INFO [http-nio-8080-exec-7] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 15:37:26] INFO [http-nio-8080-exec-2] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 16:08:47] INFO [main] ContextStartEventHandler.onApplicationEvent(20) | Context start application: org.springframework.jdbc.datasource.DriverManagerDataSource@3380ca3d
+[2022-10-14 16:08:47] INFO [main] ContextStartEventHandler.createTable(43) | Table HN_USER already exits!
+[2022-10-14 16:09:08] INFO [http-nio-8080-exec-1] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
+[2022-10-14 16:09:08] INFO [http-nio-8080-exec-2] UserAuthProvider.authenticate(30) | ========> Found User{username='KhacBao', password='123456', email='baonk107working@gmail.com', age=21, groupId=1} by KhacBao
